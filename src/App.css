@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 50px;
   font-size: 100%;
-  line-height: 1.5
+  line-height: 1.5;
+  background-color: var(--color-secondary-1-4);
 }
 
 h1,
@@ -45,13 +46,16 @@ sub {
   line-height: 0
 }
 
+
 button {
   display: inline-block;
   border: none;
   padding: 1rem 2rem;
   margin: 0;
   text-decoration: none;
-  background: #0069ed;
+  background: var(--color-primary-0);
+  border: 3px solid var(--color-primary-2);
+  border-radius: 4px;
   color: #ffffff;
   margin: 5px;
   font-family: sans-serif;
@@ -66,18 +70,88 @@ button {
 
 button:hover,
 button:focus {
-  background: #0053ba;
+  background: var(--color-primary-2);
 }
 
 button:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px;
+  outline: 1px solid var(--color-primary-4);
+  outline-offset: 4px;
 }
 
 button:active {
   transform: scale(0.99);
 }
 
-.loading {
-  background: grey
+ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  width: 100%;
+  border-top: 5px solid var(--color-secondary-2-3);
+  border-bottom: 5px solid var(--color-secondary-2-3);
 }
+
+li {
+  display: inline-block;
+  margin: 0px 10px 0px 5px;
+  transition: background 250ms ease-in-out,
+    transform 150ms ease;
+}
+
+li:hover {
+  background-color: var(--color-secondary-2-3);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  margin: 0px;
+  padding: 5px;
+}
+
+/* Unvisited link  */
+a:visited {
+  color: black;
+}
+
+/* Visited link    */
+a:hover {
+  color: black;
+}
+
+/* Mouse over link */
+a:active {
+  color: black;
+}
+
+.loading {
+  background: grey;
+}
+
+.App {
+  display: flex;
+  flex: 1;
+  max-width: 700px;
+  min-width: 250px;
+  min-height: 90vh;
+  background-color: white;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 5px solid var(--color-primary-2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+header {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Nav {
+  width: 100%;
+}
+
+.Logo {
+  margin: 0px;
+}
+

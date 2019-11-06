@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:root {
+  /* Main Primary color */
+  --color-primary-0: #1A9188;
+  --color-primary-1: #007A71;
+  --color-primary-2: #004D48;
+  --color-primary-3: #74CBC5;
+  --color-primary-4: #74D1CA;
+  /* Main Secondary color (1) */
+  --color-secondary-1-0: #ECA92A;
+  --color-secondary-1-1: #C78200;
+  --color-secondary-1-2: #7E5200;
+  --color-secondary-1-3: #FFD991;
+  --color-secondary-1-4: #FFD88E;
+  /* Main Secondary color (2) */
+  --color-secondary-2-0: #E72933;
+  --color-secondary-2-1: #C3000A;
+  --color-secondary-2-2: #7B0006;
+  --color-secondary-2-3: #FD9095;
+  --color-secondary-2-4: #FD8D93;
+}
