@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import './index.css'
 import './App.css';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+
 import Rate from './Pages/Rate';
 import About from './Pages/About';
 import Contact from './Pages/Contact';

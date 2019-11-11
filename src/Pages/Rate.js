@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Loader from 'react-loader-spinner';
 import {
   generateCode
 } from '../helpers';
@@ -28,8 +29,14 @@ export default () => {
 	return (
 		<div>
 			<h2>Rate this number</h2>
-			<h3>{code}</h3>
-			<RatingButtons loading={isSubmitting} onRate={onRate} />
+			{isSubmitting? 
+				<Loader type="Rings" height={200} width={200} />
+			:
+				<React.Fragment>
+					<h3>{code}</h3>
+					<RatingButtons loading={isSubmitting} onRate={onRate} />
+				</React.Fragment>
+			}
 		</div>
 	);
 };
